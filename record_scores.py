@@ -59,7 +59,7 @@ if __name__ == '__main__':
     for input in inputs:
         raw_df.loc[len(raw_df.index)] = [d, t, input]
 
-    raw_df.to_csv(raw_paths[m])
+    raw_df.to_csv(raw_paths[m], index = False)
 
     # Update average data csv file
     avg_df = pd.read_csv(avg_paths[m])
@@ -68,7 +68,7 @@ if __name__ == '__main__':
 
     avg_df.loc[len(avg_df.index)] = [d, avg]
 
-    avg_df.to_csv(avg_paths[m])
+    avg_df.to_csv(avg_paths[m], index = False)
 
     
     
