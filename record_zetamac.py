@@ -12,10 +12,10 @@ def init_vars():
     return day, time, mode
 
 def prompt_mode():
-    print("Select 0 for addition, 1 for subtraction, 2 for multiplcation, 3 for division, 4 for combined, 5 for large multiplication")
+    print("Select 0 for addition, 1 for subtraction, 2 for multiplcation, 3 for division, 4 for combined, 5 for large multiplication, 6 for large divison")
     mode = int(input("Mode: "))
 
-    while mode not in [0, 1, 2, 3, 4, 5]:
+    while mode not in [0, 1, 2, 3, 4, 5, 6]:
         mode = int(input('Invalid input. Input mode again: '))
 
     return mode
@@ -49,8 +49,8 @@ if __name__ == '__main__':
     # Create date, time, and mode varibles
     d, t, m = init_vars()
 
-    raw_paths = ['data/zetamac/addition_raw.csv', 'data/zetamac/subtraction_raw.csv', 'data/zetamac/multiplication_raw.csv', 'data/zetamac/division_raw.csv', 'data/zetamac/combined_raw.csv', 'data/zetamac/large_multi_raw.csv']
-    avg_paths = ['data/zetamac/addition_avg.csv', 'data/zetamac/subtraction_avg.csv', 'data/zetamac/multiplication_avg.csv', 'data/zetamac/division_avg.csv', 'data/zetamac/combined_avg.csv', 'data/zetamac/large_multi_avg.csv']
+    raw_paths = ['data/zetamac/addition_raw.csv', 'data/zetamac/subtraction_raw.csv', 'data/zetamac/multiplication_raw.csv', 'data/zetamac/division_raw.csv', 'data/zetamac/combined_raw.csv', 'data/zetamac/large_multi_raw.csv', 'data/zetamac/large_divison_raw.csv']
+    avg_paths = ['data/zetamac/addition_avg.csv', 'data/zetamac/subtraction_avg.csv', 'data/zetamac/multiplication_avg.csv', 'data/zetamac/division_avg.csv', 'data/zetamac/combined_avg.csv', 'data/zetamac/large_multi_avg.csv', 'data/zetamac/large_division_avg.csv']
 
     # Update raw data csv file
     raw_df = pd.read_csv(raw_paths[m])
