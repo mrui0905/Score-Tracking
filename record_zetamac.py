@@ -49,7 +49,7 @@ if __name__ == '__main__':
     # Create date, time, and mode varibles
     d, t, m = init_vars()
 
-    raw_paths = ['data/zetamac/addition_raw.csv', 'data/zetamac/subtraction_raw.csv', 'data/zetamac/multiplication_raw.csv', 'data/zetamac/division_raw.csv', 'data/zetamac/combined_raw.csv', 'data/zetamac/large_multi_raw.csv', 'data/zetamac/large_divison_raw.csv']
+    raw_paths = ['data/zetamac/addition_raw.csv', 'data/zetamac/subtraction_raw.csv', 'data/zetamac/multiplication_raw.csv', 'data/zetamac/division_raw.csv', 'data/zetamac/combined_raw.csv', 'data/zetamac/large_multi_raw.csv', 'data/zetamac/large_division_raw.csv']
     avg_paths = ['data/zetamac/addition_avg.csv', 'data/zetamac/subtraction_avg.csv', 'data/zetamac/multiplication_avg.csv', 'data/zetamac/division_avg.csv', 'data/zetamac/combined_avg.csv', 'data/zetamac/large_multi_avg.csv', 'data/zetamac/large_division_avg.csv']
 
     # Update raw data csv file
